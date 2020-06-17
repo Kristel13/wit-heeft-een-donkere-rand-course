@@ -1,0 +1,16 @@
+title: Wit heeft een donkere rand
+description: e-book
+template:
+  repo: wit-heeft-een-donkere-rand-template
+  name: wit-heeft-een-donkere-rand
+before:
+  - type: createIssue
+    title: Welcome!
+    body: new-issue.md
+steps:
+  - title: First step
+    description: The first step in your course
+    event: issues.assigned
+    link: '{{ repoUrl }}'
+    actions:
+      - type: closeIssue
